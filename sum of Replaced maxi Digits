@@ -1,0 +1,6 @@
+a,b=list(map(str,input().strip().split()))
+maxi1=max(a)
+
+maxi2=max(b)
+d=a.replace(maxi1,maxi2);
+print(int(d)+int(b));
