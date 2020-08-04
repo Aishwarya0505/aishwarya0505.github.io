@@ -1,0 +1,11 @@
+n,m=map(int,input().strip().split(' '))
+flag=0
+
+for i in range(n,m+1):
+    if('0' in list(str(i))):
+        print(i,end=' ');
+        flag=1;
+
+if flag==0:
+    print("-1");
+    
