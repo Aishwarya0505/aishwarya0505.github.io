@@ -1,0 +1,28 @@
+a,b=map(int,input().strip().split(' '))
+g=[list(map(int,input().strip().split(' '))) for i in range(a)];
+
+h,k=[],1;
+for i in g:
+    if k%2==0:
+        h.append(i[::-1]);
+    else:
+        h.append(i);
+    k+=1;
+l=[[h[i][j] for i  in range(a)]for j in range(b)];
+m=[];
+
+n=1;
+for i in l:
+    if n%2!=0:
+        m.append(i[::-1]);
+    else:
+        m.append(i);
+    n+=1;
+for i in range(a):
+    for j in range(b):
+        
+        print(m[j][i],end=' ');
+    print()
+    
+
+
